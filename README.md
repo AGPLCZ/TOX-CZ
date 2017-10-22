@@ -6,4 +6,4 @@ We translate the https://tox.chat/ site into Czech and we optimize information f
 - Optimalizovat informace pro českého uživatele. 
 - Vytvořit moderní web-design který bude částečně korespondovat s originálem.
 
-# DEMO: http://mbot.cz/
+# DEMO: https://mbot.cz/
