@@ -1,0 +1,98 @@
+// Variables
+//------------------------------------------------------
+$footer-background-color:           $darkgray-dark !default;
+$footer-hr-color:            		$darkgray-light !default;
+$footer-menu-item-color:            $mediumgray-dark !default;
+$footer-menu-item-color-hover:      $mediumgray-light !default;
+$footer-logo-color:                 $white !default;
+
+
+
+// Exports
+//------------------------------------------------------
+
+@include exports("footer") {
+
+        /**
+        * footer
+        * --------------------------------------------------
+        */
+      
+        footer {
+		    color: $footer-logo-color;
+                background-color: $footer-background-color;
+                position: relative;
+                margin-top: 60px;
+                padding-bottom: 20px;
+
+		    & a, & p {
+				color: $footer-menu-item-color;
+                        font-size: $font-size-small;
+                        line-height: $line-height-small;
+		    }
+
+                & h3 {
+				color: $sunflower-dark;
+                        font-weight: 300;
+		    }                
+                
+		    & a:hover,
+		    & a:active {
+                        color: $footer-menu-item-color-hover;
+				text-decoration: none;
+		    }
+
+                & .copyright {
+				font-size: $font-size-small;
+                        color: $footer-menu-item-color;
+                }
+
+                & .top {
+                        margin: 10px;
+                        font-size: 24px;
+                        color: $white;
+                }
+
+                & .top:hover {
+                        color: $mediumgray-dark;
+                }                
+
+                & ul {
+                        list-style-type: none;
+                        margin: 15px 0;
+                        padding: 0;
+                        
+                        & li {
+                                display: inline;
+                                list-style-type: none;
+                        }
+                        
+                        & li:after { color: $darkgray-light; content: "/"; padding: 0 8px 0 12px; }
+                        & li:last-child:after { content: none; }
+                        
+                        & li.active {
+                                a { color: $sunflower-light; }
+                                }
+
+                }                
+                
+        }
+
+        footer:before {
+                content: " ";
+                display: block;
+                position: relative;
+                top: -20px;
+                height: 20px;
+                background: linear-gradient( 45deg, $footer-background-color 50%, transparent 50%) 0 0,
+                            linear-gradient(-45deg, $footer-background-color 50%, transparent 50%) 0 0;
+                background-repeat: repeat-x;
+                background-size: 26px 26px, 26px 26px;
+
+        }        
+        
+        
+	  footer hr {
+		    background-image: url(/_design/content/hr-foot.png);
+	  }
+}
