@@ -105,6 +105,7 @@
 									<pre>echo "deb https://pkg.tox.chat/debian stable $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/tox.list
 			wget -qO - https://pkg.tox.chat/debian/pkg.gpg.key | sudo apt-key add -
 			sudo apt-get install apt-transport-https
+			sudo apt-get update
 			sudo apt-get update</pre>
 									<p>Pro denní verze klienta, použijte následující příkazy:</p>
 									<pre>echo "deb https://pkg.tox.chat/debian nightly $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/tox.list
