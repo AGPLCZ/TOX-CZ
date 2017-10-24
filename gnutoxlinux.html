@@ -94,26 +94,26 @@
 							<a href="http://mbot.cz/download.html" title="Close" class="close"><span class="fa fa-close">&nbsp;</span></a>
 			
 							<h1>Linux</h1>
-							<p>Note: support for more distros is coming soon. Experienced package maintainers wanted. Contact infrastructure@tox.chat for more info.</p>
+							<p>Poznámka: podpora více distribucí se již brzy.</p>
 							<section class="tabsection">
 								<h2>Debian/Ubuntu</h2>
 							
 								<div class="tabdiv">
-									<p>For distributions utilising the deb package format, you'll need to run the following commands to add our repository.</p>
+									<p>Pro distribuce které používají deb balíček, budete nejprve muset spustit následující příkazy a přidat následující repozitáře.</p>
 									<p>Please note that only Debian (8/Jessie, 9/Stretch, 10/Buster and Sid) and Ubuntu (16.04/Xenial, 16.10/Yakkety and 17.04/Zesty) are officially supported. If your distribution is not supported, you can find compilation instructions in <a href="clients.html">client repositories</a>.</p>
-									<p>For stable client releases, use the following commands:</p>
+									<p>Pro sabilní verzi klienta, použijte následující příkazy:</p>
 									<pre>echo "deb https://pkg.tox.chat/debian stable $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/tox.list
 			wget -qO - https://pkg.tox.chat/debian/pkg.gpg.key | sudo apt-key add -
 			sudo apt-get install apt-transport-https
 			sudo apt-get update</pre>
-									<p>For nightly client releases, use the following commands:</p>
+									<p>Pro denní verze klienta, použijte následující příkazy:</p>
 									<pre>echo "deb https://pkg.tox.chat/debian nightly $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/tox.list
 			wget -qO - https://pkg.tox.chat/debian/pkg.gpg.key | sudo apt-key add -
 			sudo apt-get install apt-transport-https
 			sudo apt-get update</pre>
-									<p>And to install (for example) uTox:</p>
+									<p>A nainstalujte například uTox:</p>
 									<pre>sudo apt-get install utox</pre>
-									<p>To see all available packages:</p>
+									<p>Chceteli zobrazit všechny dostupné balíčky:</p>
 									<pre>cat /var/lib/apt/lists/pkg.tox.chat* | grep "Package: "</pre>
 								</div>
 			
