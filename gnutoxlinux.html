@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="cs">  
+  <head>	     
+    <meta charset="utf-8">	     
+    <title>TOX  
+    </title> 	     
+    <meta name="robots" content="all,follow">	     
+    <meta name="keywords" content="instant masaging">	     
+    <meta name="description" content="TOX">	     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	     
+     <link rel="stylesheet" type="text/css" media="screen" href="/_css/_bootstrap/bootstrap.css">	     
+    <link rel="stylesheet" type="text/css" media="screen" href="/_css/_font-awesome/font-awesome.css">	     
+    <link rel="stylesheet" type="text/css" media="screen" href="/_css/_lightgallery/lightgallery.css">	     
+    <link rel="stylesheet" type="text/css" media="screen" href="/_css/_social-buttons/social-buttons.css">	     
+    <link rel="stylesheet" type="text/css" media="screen" href="/_css/swiper.min.css">	     
+    <link rel="stylesheet" type="text/css" media="screen" href="/_css/hover.min.css">	     
+		<link rel="stylesheet" type="text/css" media="screen" href="/_css/_bootflat/bootflat.css">
+		<link rel="stylesheet" href="/_css/_font-awesome/font-awesome.css">
+    <link rel="shortcut icon" href="theme/img/favicon.ico"> 	    	     
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>  
+  </head>  
+  <body>       
+    <!-- main#container -->    
+    <header id="top">	       
+      <!-- navigation --> 	       
+      <nav class="navbar-square navbar-default">		         
+        <div class="container">			           
+         		             
+            <a class="navbar-brand" title="TOX" href="index.html">              
+              <img src="/_design/content/logo.svg" width="50" height="50" alt="logo" /></a>			           
+         	           
+          <ul class="nav navbar-nav navbar-right">				             
+            <li>				               
+            <a href="download.html">					               
+              <span class="fa fa-download">              
+              </span> Ke stažení 				  </a>				             
+            </li>				             
+            <li>				               
+            <a href="about.html">					               
+              <span class="fa fa-align-left">              
+              </span> Zjistit více 				  </a>				             
+            </li>				             
+            <li>				               
+            <a href="faq.html">					               
+              <span class="fa fa-info-circle">              
+              </span> Časté dotazy 				  </a>				             
+            </li>
+		<li>				               
+            <a href="clients.html">					               
+              <span class="fa fa-list-ul">              
+              </span> Aplikace (klient) 				  </a>				             
+            </li>
+		<li>              
+            <a href="blog.html">                  
+              <span class="fa fa-rss">
+              </span> Blog                </a>	
+		  </li>	             
+            <li>				               
+            <a href="https://tox.chat/">					               
+              <span class="fa fa-globe">              
+              </span> Official Web							  </a>				             
+            </li>			           
+          </ul>			         
+        </div>		       
+      </nav>    
+    </header>    
+    <div class="zigzag">    
+    </div>	     
+    <!-- slider --> 	     
+        <div class="swiper-container">             
+				<div class="swiper-wrapper">                     
+					<div class="swiper-slide parallax-bg slide-1" style="background-image: url(/_files/slider/11201003_background.png);">                     
+						<div class="swiper-caption">                         
+							<div class="title" data-swiper-parallax="-700">Jak nainstalaci na Linuxu          
+							</div>                                     
+							<div class="subtitle" data-swiper-parallax="-200">Vyber si repo pro svoji distribuci.
+							</div>                                                       
+						</div>                 
+					</div>                  
+				</div>          
+			</div>        
+			<br>    
+			<br>                                     
+                       
+                    
+       <div class="container">                         
+      <div class="row">                        
+
+				
+				<section id="modals">
+					<div id="gnulinux" class="modalDialog button">
+						<div>
+							<a href="#close" class="close-overlay"></a>
+							<a href="http://mbot.cz/download.html" title="Close" class="close"><span class="fa fa-close">&nbsp;</span></a>
+			
+							<h1>Linux</h1>
+							<p>Note: support for more distros is coming soon. Experienced package maintainers wanted. Contact infrastructure@tox.chat for more info.</p>
+							<section class="tabsection">
+								<h2>Debian/Ubuntu</h2>
+							
+								<div class="tabdiv">
+									<p>For distributions utilising the deb package format, you'll need to run the following commands to add our repository.</p>
+									<p>Please note that only Debian (8/Jessie, 9/Stretch, 10/Buster and Sid) and Ubuntu (16.04/Xenial, 16.10/Yakkety and 17.04/Zesty) are officially supported. If your distribution is not supported, you can find compilation instructions in <a href="clients.html">client repositories</a>.</p>
+									<p>For stable client releases, use the following commands:</p>
+									<pre>echo "deb https://pkg.tox.chat/debian stable $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/tox.list
+			wget -qO - https://pkg.tox.chat/debian/pkg.gpg.key | sudo apt-key add -
+			sudo apt-get install apt-transport-https
+			sudo apt-get update</pre>
+									<p>For nightly client releases, use the following commands:</p>
+									<pre>echo "deb https://pkg.tox.chat/debian nightly $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/tox.list
+			wget -qO - https://pkg.tox.chat/debian/pkg.gpg.key | sudo apt-key add -
+			sudo apt-get install apt-transport-https
+			sudo apt-get update</pre>
+									<p>And to install (for example) uTox:</p>
+									<pre>sudo apt-get install utox</pre>
+									<p>To see all available packages:</p>
+									<pre>cat /var/lib/apt/lists/pkg.tox.chat* | grep "Package: "</pre>
+								</div>
+			
+								
+									<h2>Gentoo</h2>
+								
+								<div class="tabdiv">
+									<p>The Tox Project overlay is in the official Layman list.</p>
+									<p>To add it:</p>
+									<pre>layman -a tox-overlay</pre>
+									<p>Then install your client of choice:</p>
+									<pre>emerge --ask &lt;client_name&gt;</pre>
+									<p>If you'd like to submit changes, or report issues, you can <a href="https://github.com/Tox/gentoo-overlay-tox">find the overlay on Github</a>.</p>
+								</div>
+			
+								
+									<h2>Arch</h2>
+								<div class="tabdiv">
+									<p>Toxcore, Toxic, and qTox are available in the Arch community repo. To install (for example) qTox:</p>
+									<pre>pacman -S qtox</pre>
+									<p>Alternatively there are some packages available in the AUR. To install (for example) µTox from the AUR:</p>
+									<pre>yaourt -S utox</pre>
+									<p>Supported PKGBUILDs are located <a href="https://github.com/Tox/arch-repo-tox">here</a>.</p>
+									<p>If you have an issue with Tox and you installed Tox using an AUR package, please compile that package from source before filing a bug report. If the issue appears to be on the Arch maintainer's side (eg: compiles from source fine, but the PKGBUILD fails), please contact the package maintainer and let them know!</p>
+								</div>
+							</section>
+						</div>
+					</div>         
+            
+				
+				</section>
+
+
+
+
+   </div>      </div>   
+          </div>     
+                                                         
+      <br>      
+      <br>                   
+    </div>                   
+                    
+    <footer  style="text-align: center;">	 							 							        				       
+      <div class="container">							            				           
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">			    												            					           
+          <h3><b>GIT HUB</b> - zdroj</h3>           					           
+          <p>Tato stránka byla vytvořena ze souboru hostovaném na veřejném               					               
+            <a href="https://github.com/Tox/tox.chat/tree/master/themes/website/templates/index.html"><u>GitHub repozitáři.</u></a>           					           
+          </p>							   													   															            				           
+        </div>   															            				           
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">															              					           
+          <h3><b>Creative Commons</b> - Licence</h3>              					           
+          <p>Toto dílo podléhá licenci Creative Commons.               					               
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.cs"><u>Uveďte původ, zachovejte licenci 4.0</u></a>           					           
+          </p>           					           
+          <p>                    					               
+            <a href="http://creativecommons.org/licenses/by-sa/4.0/"> Mezinárodní License:               						               
+              <img src="theme/img/CC.png" alt="licence"></a>           	   					           
+          </p>												   													   															            				           
+        </div>													            				           
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">												 													   													               					           
+          <h3><b>Ke stažení</b> - GIT HUB</h3>           					           
+          <p>Kód webové stránky můžete stáhnout na veřejném               					               
+            <a href="https://github.com/AGPLCZ/TOX-website"><u>GitHub repozitáři.</u></a>        					           
+          </p>													            				           
+        </div>											          				       
+      </div>												   											   							   											       						 						 											 	 					      			       
+    </footer>	  			   	              
+    <!-- js -->           
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>           
+<script>window.jQuery || document.write('<script src="/_js/jquery-1.11.3.min.js"><\/script>')</script>           
+<script type="text/javascript" src="/_js/bootstrap.min.js"></script>           
+<script type="text/javascript" src="/_js/jquery.lightgallery-all.min.js"></script>           
+<script type="text/javascript" src="/_js/jquery.swiper.min.js"></script>           
+<script type="text/javascript" src="/_js/jquery.social-buttons.js"></script>           
+<script type="text/javascript" src="/_js/jquery.plugins.js"></script>               
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->           
+<script type="text/javascript" src="/_js/cookieconsent.js"></script>               
+    <!-- shop form validate -->           
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script>           
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/additional-methods.min.js"></script>           
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/localization/messages_cs.js"></script>     
+  </body>
+</html>
+
+
