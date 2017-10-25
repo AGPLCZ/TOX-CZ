@@ -6,4 +6,4 @@ Web page in Czech https://tox.chat
 - Optimalizovat informace pro českého uživatele. 
 - Vytvořit moderní web-design
 
-# DEMO: https://mbot.cz
+# DEMO: https://agplcz.github.io/
