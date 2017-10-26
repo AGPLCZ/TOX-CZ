@@ -2105,7 +2105,7 @@ background: linear-gradient(45deg,
 
 
 footer hr {
-	background-image: url(/_design/content/hr-foot.png)
+	background-image: url(/design/content/hr-foot.png)
 }
 .timeline dl {
 	position: relative;
@@ -2599,7 +2599,7 @@ background: linear-gradient(-135deg,
 }
 .strap {
 	margin-top: -20px;
-	background: url(/_design/content/subheader.jpg) no-repeat center center fixed;
+	background: url(/design/content/subheader.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -2610,7 +2610,7 @@ background: linear-gradient(-135deg,
 }
 .news-strap {
 	margin-top: -20px;
-	background: url(/_design/content/subheader.jpg) no-repeat center center fixed;
+	background: url(/design/content/subheader.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -2621,7 +2621,7 @@ background: linear-gradient(-135deg,
 hr {
 	margin: 10px 0;
 	border: none;
-	background-image: url(/_design/content/hr.png);
+	background-image: url(/design/content/hr.png);
 	height: 20px
 }
 h1, .lead {
