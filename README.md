@@ -1,7 +1,7 @@
 # TOX-website
 Web page in Czech https://tox.chat
 
-## Cíle projektu MBOT
+## Cíle projektu TOX-CZ
 - Přeložit tento web do češtiny https://tox.chat
 - Optimalizovat informace pro českého uživatele. 
 - Vytvořit moderní web-design
